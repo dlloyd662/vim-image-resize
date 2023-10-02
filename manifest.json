@@ -5,6 +5,6 @@
   "minAppVersion": "0.9.12",
   "description": "This plugin enables you to increase/decrease the size of an image in vim mode",
   "author": "Daniel Lloyd",
-  "authorUrl": "https://github.com/dlloyd66/",
+  "authorUrl": "https://github.com/dlloyd662/vim-image-resize",
   "isDesktopOnly": true
 }
