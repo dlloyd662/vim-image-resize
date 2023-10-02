@@ -24,6 +24,7 @@ export default class ImageResizePlugin extends Plugin {
   async onload() {
     await this.loadSettings();
 
+    //Resize method
     function resize(scale: number, activeLeaf: any) {
       if (activeLeaf && activeLeaf.view) {
         if (activeLeaf.view instanceof MarkdownView) {
