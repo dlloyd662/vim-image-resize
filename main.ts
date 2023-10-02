@@ -40,8 +40,6 @@ export default class ImageResizePlugin extends Plugin {
             }
 
             cmEditor.setLine(cursor.line, line.replace(regex, `|${newWidth}]`));
-
-            console.log(matchText);
           } else {
             const modifiedString = line.replace(/\]/, `|100]`);
             cmEditor.setLine(cursor.line, modifiedString);
@@ -52,16 +50,13 @@ export default class ImageResizePlugin extends Plugin {
 
     this.registerDomEvent(document, "keydown", (evt: KeyboardEvent) => {
       const activeLeaf = this.app.workspace.activeLeaf;
-      console.log(evt);
       if (evt.ctrlKey && evt.shiftKey && evt.key.toLocaleLowerCase() === "k") {
-        console.log("asdfasdlfjs");
         resize(100, activeLeaf);
       } else if (
         evt.ctrlKey &&
         evt.shiftKey &&
         evt.key.toLocaleLowerCase() === "j"
       ) {
-        console.log("alkjfalkdflaleewwoieuroweurowur");
         resize(-100, activeLeaf);
       }
     });

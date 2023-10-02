@@ -1,10 +1,10 @@
 {
-  "id": "vim-image-zoom",
-  "name": "Vim Image zoom",
+  "id": "vim-image-resize",
+  "name": "Vim Image resize",
   "version": "1.0.1",
   "minAppVersion": "0.9.12",
-  "description": "This plugin enables you to increase/decrease the size of an image by scrolling",
-  "author": "Nico Jeske",
-  "authorUrl": "https://github.com/nicojeske/mousewheel-image-zoom",
+  "description": "This plugin enables you to increase/decrease the size of an image in vim mode",
+  "author": "Daniel Lloyd",
+  "authorUrl": "https://github.com/dlloyd66/",
   "isDesktopOnly": true
 }
