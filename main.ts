@@ -17,12 +17,7 @@ const DEFAULT_SETTINGS: ImageResizeSettings = {
   initialSize: 500,
 };
 
-function addResizeHandle(img: HTMLImageElement) {
-  const handle = document.createElement("div");
-  handle.classList.add("image-resize-handle");
-  img.parentElement?.appendChild(handle);
-}
-export default class MouseWheelZoomPlugin extends Plugin {
+export default class ImageResizePlugin extends Plugin {
   settings: ImageResizeSettings;
   isKeyHeldDown = false;
 
